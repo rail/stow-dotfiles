@@ -1,0 +1,24 @@
+alt - h : yabai -m window --focus west
+alt - l : yabai -m window --focus east
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+
+shift + alt - h : yabai -m window --swap west --focus
+shift + alt - l : yabai -m window --swap east --focus
+shift + alt - j : yabai -m window --swap south --focus
+shift + alt - k : yabai -m window --swap north --focus
+
+alt - 0 : yabai -m space --balance
+alt - 1 : yabai -m display --focus 1
+alt - 2 : yabai -m display --focus 2
+alt - r : yabai -m space --rotate 90
+
+cmd + ctrl - 1 : yabai -m window --space 1 --focus
+cmd + ctrl - 2 : yabai -m window --space 2 --focus
+cmd + ctrl - 3 : yabai -m window --space 3 --focus
+cmd + ctrl - 4 : yabai -m window --space 4 --focus
+cmd + ctrl - 5 : yabai -m window --space 5 --focus
+cmd + ctrl - 6 : yabai -m window --space 6 --focus
+cmd + ctrl - 7 : yabai -m window --space 7 --focus
+cmd + ctrl - 8 : yabai -m window --space 8 --focus
+cmd + ctrl - 9 : yabai -m window --space 9 --focus

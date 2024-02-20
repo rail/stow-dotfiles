@@ -1,0 +1,69 @@
+[alias]
+	ada = "add -A"
+	br = "branch"
+	ci = "commit -v"
+	co = "checkout"
+	dc = "diff --cached"
+	defbranch = "!f() { test -n \"$1\" && r=\"$1\" || r=origin; basename \"$(git rev-parse --abbrev-ref \"$r\"/HEAD)\"; }; f"
+	di = "diff -U8 --patch-with-stat --binary"
+	du = "diff -U8 --patch-with-stat --binary @{u}..."
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+	ll = "log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --numstat --date=relative"
+	nb = "!f() { git switch -c \"$1\" \"origin/$(git defbranch)\"; }; f"
+	nw = "!f() { git worktree add --track -b \"$1\" \"../$1\" \"origin/$(git defbranch)\"; }; f"
+	shw = "show --format=format:'commit %H %d%nAuthor: %an <%ae>%nDate: %aD%n%n%B'"
+	st = "status"
+	unstage = "reset HEAD --"
+	wip = "for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads"
+
+[commit]
+	gpgSign = false
+
+[core]
+	autocrlf = "input"
+	pager = "delta"
+	safecrlf = true
+	sshCommand = "/usr/bin/ssh"
+
+[credential "https://gist.github.com"]
+	helper = "gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = "gh auth git-credential"
+
+[delta]
+	features = "decorations"
+
+[delta "decorations"]
+	commit-style = "raw"
+	file-style = "omit"
+	hunk-header-style = "file line-number syntax"
+
+[gc]
+	auto = "0"
+
+[github]
+	user = "rail"
+
+[init]
+	defaultBranch = "main"
+
+[interactive]
+	diffFilter = "delta --color-only"
+
+[pull]
+	rebase = true
+
+[rerere]
+	enabled = true
+
+[tag]
+	gpgSign = false
+
+[url "git@github.com:cockroachlabs"]
+	insteadOf = "https://github.com/cockroachlabs"
+
+[user]
+	email = "rail@iqchoice.com"
+	name = "Rail Aliiev"
+	signingKey = "F5382AFF7359EA23096B8397FA2FD0E389893249"
