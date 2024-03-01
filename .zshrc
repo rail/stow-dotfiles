@@ -140,7 +140,3 @@ USE_GKE_GCLOUD_AUTH_PLUGIN=True
 
 source $BREW_PREFIX/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 source $BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/rail/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
