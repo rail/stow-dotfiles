@@ -1,4 +1,6 @@
-~/bin/prokopton
+if test -x ~/bin/prokopton; then
+  ~/bin/prokopton
+fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -97,7 +99,7 @@ alias tree='eza --tree'
 
 
 export PATH=$PATH:~/go/bin:~/go/src/github.com/cockroachdb/cockroach/bin
-BREW_PREFIX=/opt/homebrew
+BREW_PREFIX=$(brew --prefix)
 
 source "$BREW_PREFIX/share/google-cloud-sdk/path.zsh.inc"
 source "$BREW_PREFIX/share/google-cloud-sdk/completion.zsh.inc"
