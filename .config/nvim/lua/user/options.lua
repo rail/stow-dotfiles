@@ -1,4 +1,4 @@
-options = {
+local options = {
   opt = {
     spell = true,
   },
