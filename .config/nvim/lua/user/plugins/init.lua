@@ -1,7 +1,6 @@
 local plugins = {
   { "AstroNvim/astrocommunity",
     { import = "astrocommunity.pack.go" },
-    { import = "astrocommunity.pack.nix" },
   },
   {
     "folke/trouble.nvim",
@@ -17,7 +16,12 @@ local plugins = {
   {
     "folke/noice.nvim",
     event = "VeryLazy",
-    opts = {},
+    opts = {
+      lsp = {
+        hover = { enabled = false },
+        signature = { enabled = false },
+      },
+    },
     dependencies = {
       "MunifTanjim/nui.nvim",
       "rcarriga/nvim-notify",
