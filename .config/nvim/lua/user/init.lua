@@ -1,3 +1,6 @@
+-- Rail's https://astronvim.com/ config
+-- See https://docs.astronvim.com/ on how to install it and use user configs.
+
 local options = {
   opt = {
     spell = true,
@@ -10,6 +13,7 @@ local lsp = {
   settings = {
     gopls = {
       env = {
+        -- TODO: make GOPACKAGESDRIVER project-specific
         GOPACKAGESDRIVER = "./build/bazelutil/gopackagesdriver.sh",
       },
       directoryFilters = {
@@ -48,10 +52,6 @@ local plugins = {
     },
   },
   {
-    "lewis6991/gitsigns.nvim",
-    keys = { { "<leader>gT", "<cmd>Gitsigns toggle_current_line_blame<cr>" }, desc = "Toggle current line blame" },
-  },
-  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
@@ -59,10 +59,12 @@ local plugins = {
   },
   {
     "mhartington/formatter.nvim",
-    ft = "go",
+    cmd = { "FormatWrite", "Format" },
     opts = {
       filetype = {
         go = {
+          -- Defines `crlfmt` as a formatter for Go files.
+          -- It will be run as a part of :Format or FormatSave
           function()
             return {
               exe = "crlfmt",
@@ -75,6 +77,7 @@ local plugins = {
   },
 }
 
+-- Open last position instead of the top of a file.
 local remember_last_position = function()
   vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
     callback = function(opts)
@@ -86,6 +89,7 @@ local remember_last_position = function()
   })
 end
 
+-- Run crlfmt on save
 local crlfmt_save = function()
   vim.api.nvim_create_augroup("__formatter__", { clear = true })
   vim.api.nvim_create_autocmd("BufWritePost", {
