@@ -90,7 +90,7 @@ export EDITOR='nvim'
 
 alias vi=nvim
 alias vim=nvim
-alias eza='eza '\''--icons'\'' '\''--git'\'''
+alias eza='eza --icons --git'
 alias la='eza -a'
 alias ll='eza -l'
 alias lla='eza -la'

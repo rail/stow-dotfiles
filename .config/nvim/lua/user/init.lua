@@ -25,37 +25,24 @@ local lsp = {
 }
 
 local plugins = {
-  { "AstroNvim/astrocommunity", { import = "astrocommunity.pack.go" } },
   {
-    "folke/trouble.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    cmd = { "Trouble", "TroubleToggle" },
-  },
-  {
-    "folke/todo-comments.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    event = "User AstroFile",
-    opts = {},
-  },
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {
-      lsp = {
-        hover = { enabled = false },
-        signature = { enabled = false },
+    "AstroNvim/astrocommunity",
+    { import = "astrocommunity.pack.bash" },
+    { import = "astrocommunity.pack.go" },
+    { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+    { import = "astrocommunity.utility.noice-nvim" },
+    {
+      "noice.nvim",
+      opts = {
+        presets = {
+          bottom_search = false,
+          lsp_doc_border = true,
+        },
       },
     },
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    },
-  },
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
+    { import = "astrocommunity.diagnostics.trouble-nvim" },
+    { import = "astrocommunity.editing-support.todo-comments-nvim" },
+    { import = "astrocommunity.workflow.hardtime-nvim" },
   },
   {
     "mhartington/formatter.nvim",
