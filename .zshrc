@@ -96,6 +96,7 @@ alias ll='eza -l'
 alias lla='eza -la'
 alias ls='eza'
 alias tree='eza --tree'
+alias rm=grm
 
 
 export PATH=$PATH:~/go/bin:~/go/src/github.com/cockroachdb/cockroach/bin

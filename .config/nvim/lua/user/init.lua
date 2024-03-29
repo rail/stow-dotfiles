@@ -7,7 +7,7 @@ local options = {
   },
 }
 
-local colorscheme = "tokyonight-night"
+local colorscheme = "catppuccin"
 
 local lsp = {
   settings = {
@@ -30,6 +30,7 @@ local plugins = {
     { import = "astrocommunity.pack.bash" },
     { import = "astrocommunity.pack.go" },
     { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+    { import = "astrocommunity.colorscheme.catppuccin" },
     { import = "astrocommunity.utility.noice-nvim" },
     {
       "noice.nvim",
