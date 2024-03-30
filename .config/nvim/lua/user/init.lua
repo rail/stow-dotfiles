@@ -28,7 +28,9 @@ local plugins = {
   {
     "AstroNvim/astrocommunity",
     { import = "astrocommunity.pack.bash" },
+    { import = "astrocommunity.pack.docker" },
     { import = "astrocommunity.pack.go" },
+    { import = "astrocommunity.pack.terraform" },
     { import = "astrocommunity.colorscheme.tokyonight-nvim" },
     { import = "astrocommunity.colorscheme.catppuccin" },
     { import = "astrocommunity.utility.noice-nvim" },
