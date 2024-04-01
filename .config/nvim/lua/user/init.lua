@@ -34,6 +34,7 @@ local plugins = {
     { import = "astrocommunity.colorscheme.tokyonight-nvim" },
     { import = "astrocommunity.colorscheme.catppuccin" },
     { import = "astrocommunity.utility.noice-nvim" },
+    { import = "astrocommunity.motion.flash-nvim" },
     {
       "noice.nvim",
       opts = {
