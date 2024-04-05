@@ -23,4 +23,4 @@ cmd + ctrl - 7 : yabai -m window --space 7 --focus
 cmd + ctrl - 8 : yabai -m window --space 8 --focus
 cmd + ctrl - 9 : yabai -m window --space 9 --focus
 
-cmd + ctrl - r :  yabai --stop-service && yabai --start-service
+cmd + ctrl - r : yabai --stop-service && yabai --start-service
