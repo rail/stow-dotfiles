@@ -11,7 +11,7 @@ shift + alt - k : yabai -m window --swap north --focus
 alt - 0 : yabai -m space --balance
 alt - 1 : yabai -m display --focus 1
 alt - 2 : yabai -m display --focus 2
-alt - r : yabai -m space --rotate 90
+alt - r : yabai -m space --rotate 270
 
 cmd + ctrl - 1 : yabai -m window --space 1 --focus
 cmd + ctrl - 2 : yabai -m window --space 2 --focus
@@ -23,4 +23,8 @@ cmd + ctrl - 7 : yabai -m window --space 7 --focus
 cmd + ctrl - 8 : yabai -m window --space 8 --focus
 cmd + ctrl - 9 : yabai -m window --space 9 --focus
 
-cmd + ctrl - r : yabai --stop-service && yabai --start-service
+alt - x : yabai -m space --mirror x-axis
+alt - y : yabai -m space --mirror y-axis
+alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+cmd + ctrl - r : yabai --stop-service; yabai --start-service
