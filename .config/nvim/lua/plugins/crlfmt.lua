@@ -8,17 +8,19 @@ return {
   --]]
   {
     "williamboman/mason.nvim",
-    opts = function(_, opts)
-      opts.registries =
-        require("astrocore").list_insert_unique(opts.registries, { "github:rail/mason-registry@crlfmt" })
-    end,
+    opts = {
+      registries = {
+        "github:rail/mason-registry@crlfmt",
+        "github:mason-org/mason-registry",
+      },
+    },
   },
 
   {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
-    opts = function(_, opts)
-      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, { "crlfmt" })
-    end,
+    opts = {
+      ensure_installed = { "crlfmt" },
+    },
   },
   {
     "stevearc/conform.nvim",
