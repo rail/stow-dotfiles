@@ -5,15 +5,14 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  --{ import = "astrocommunity.pack.bash" },
-  { import = "astrocommunity.pack.docker" },
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.terraform" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.utility.noice-nvim" },
   {
     "noice.nvim",
     opts = {
