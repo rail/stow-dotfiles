@@ -1,13 +1,13 @@
 ---@type LazySpec
 return {
+  --[[
+    yq ea '[.]' -o json packages/crlfmt/package.yaml > registry.json
+    zip -r registry.json.zip registry.json
+    sha256sum registry.json registry.json.zip > checksums.txt
+    attach to the release
+  --]]
   {
     "williamboman/mason.nvim",
-    --[[
-      yq ea '[.]' -o json packages/crlfmt/package.yaml > registry.json
-      zip -r registry.json.zip registry.json
-      sha256sum registry.json registry.json.zip > checksums.txt
-      attach to the release
-    --]]
     opts = function(_, opts)
       opts.registries =
         require("astrocore").list_insert_unique(opts.registries, { "github:rail/mason-registry@crlfmt" })
