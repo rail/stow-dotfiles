@@ -13,15 +13,15 @@ alt - 1 : yabai -m display --focus 1
 alt - 2 : yabai -m display --focus 2
 alt - r : yabai -m space --rotate 270
 
-cmd + ctrl - 1 : yabai -m window --space 1 --focus
-cmd + ctrl - 2 : yabai -m window --space 2 --focus
-cmd + ctrl - 3 : yabai -m window --space 3 --focus
-cmd + ctrl - 4 : yabai -m window --space 4 --focus
-cmd + ctrl - 5 : yabai -m window --space 5 --focus
-cmd + ctrl - 6 : yabai -m window --space 6 --focus
-cmd + ctrl - 7 : yabai -m window --space 7 --focus
-cmd + ctrl - 8 : yabai -m window --space 8 --focus
-cmd + ctrl - 9 : yabai -m window --space 9 --focus
+cmd + ctrl - 1 : yabai -m window --space 1
+cmd + ctrl - 2 : yabai -m window --space 2
+cmd + ctrl - 3 : yabai -m window --space 3
+cmd + ctrl - 4 : yabai -m window --space 4
+cmd + ctrl - 5 : yabai -m window --space 5
+cmd + ctrl - 6 : yabai -m window --space 6
+cmd + ctrl - 7 : yabai -m window --space 7
+cmd + ctrl - 8 : yabai -m window --space 8
+cmd + ctrl - 9 : yabai -m window --space 9
 
 alt - x : yabai -m space --mirror x-axis
 alt - y : yabai -m space --mirror y-axis
