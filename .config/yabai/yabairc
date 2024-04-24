@@ -2,7 +2,6 @@
 
 yabai -m config layout bsp
 yabai -m config window_placement second_child
-yabai -m config mouse_follows_focus on
 
 yabai -m config top_padding 5
 yabai -m config bottom_padding 5
