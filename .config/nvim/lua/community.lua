@@ -6,7 +6,6 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.go" },
