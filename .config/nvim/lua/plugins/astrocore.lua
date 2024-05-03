@@ -9,6 +9,7 @@ return {
     options = {
       opt = { -- vim.opt.<key>
         spell = true,
+        scrolloff = 3,
       },
     },
   },
