@@ -10,6 +10,7 @@
 	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 	ll = "log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --numstat --date=relative"
 	nb = "!f() { git switch -c \"$1\" \"origin/$(git defbranch)\"; }; f"
+	h = "!f() { git switch $(git defbranch); }; f"
 	nw = "!f() { git worktree add --track -b \"$1\" \"../$1\" \"origin/$(git defbranch)\"; }; f"
 	shw = "show --format=format:'commit %H %d%nAuthor: %an <%ae>%nDate: %aD%n%n%B'"
 	st = "status"
