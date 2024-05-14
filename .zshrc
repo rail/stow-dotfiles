@@ -15,10 +15,6 @@ setopt APPEND_HISTORY        # append to history file (Default)
 setopt HIST_NO_STORE         # Don't store history commands
 setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks from each command line being added to the history.
 
-if test -x ~/bin/prokopton; then
-  ~/bin/prokopton
-fi
-
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(zoxide gh terraform starship fzf)
 
