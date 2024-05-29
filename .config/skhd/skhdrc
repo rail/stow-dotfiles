@@ -1,30 +1,30 @@
-alt - h : yabai -m window --focus west
-alt - l : yabai -m window --focus east
-alt - j : yabai -m window --focus south
-alt - k : yabai -m window --focus north
+alt - h : /opt/homebrew/bin/yabai -m window --focus west
+alt - l : /opt/homebrew/bin/yabai -m window --focus east
+alt - j : /opt/homebrew/bin/yabai -m window --focus south
+alt - k : /opt/homebrew/bin/yabai -m window --focus north
 
-shift + alt - h : yabai -m window --swap west --focus
-shift + alt - l : yabai -m window --swap east --focus
-shift + alt - j : yabai -m window --swap south --focus
-shift + alt - k : yabai -m window --swap north --focus
+shift + alt - h : /opt/homebrew/bin/yabai -m window --swap west --focus
+shift + alt - l : /opt/homebrew/bin/yabai -m window --swap east --focus
+shift + alt - j : /opt/homebrew/bin/yabai -m window --swap south --focus
+shift + alt - k : /opt/homebrew/bin/yabai -m window --swap north --focus
 
-alt - 0 : yabai -m space --balance
-alt - 1 : yabai -m display --focus 1
-alt - 2 : yabai -m display --focus 2
-alt - r : yabai -m space --rotate 270
+alt - 0 : /opt/homebrew/bin/yabai -m space --balance
+alt - 1 : /opt/homebrew/bin/yabai -m display --focus 1
+alt - 2 : /opt/homebrew/bin/yabai -m display --focus 2
+alt - r : /opt/homebrew/bin/yabai -m space --rotate 270
 
-cmd + ctrl - 1 : yabai -m window --space 1
-cmd + ctrl - 2 : yabai -m window --space 2
-cmd + ctrl - 3 : yabai -m window --space 3
-cmd + ctrl - 4 : yabai -m window --space 4
-cmd + ctrl - 5 : yabai -m window --space 5
-cmd + ctrl - 6 : yabai -m window --space 6
-cmd + ctrl - 7 : yabai -m window --space 7
-cmd + ctrl - 8 : yabai -m window --space 8
-cmd + ctrl - 9 : yabai -m window --space 9
+cmd + ctrl - 1 : /opt/homebrew/bin/yabai -m window --space 1
+cmd + ctrl - 2 : /opt/homebrew/bin/yabai -m window --space 2
+cmd + ctrl - 3 : /opt/homebrew/bin/yabai -m window --space 3
+cmd + ctrl - 4 : /opt/homebrew/bin/yabai -m window --space 4
+cmd + ctrl - 5 : /opt/homebrew/bin/yabai -m window --space 5
+cmd + ctrl - 6 : /opt/homebrew/bin/yabai -m window --space 6
+cmd + ctrl - 7 : /opt/homebrew/bin/yabai -m window --space 7
+cmd + ctrl - 8 : /opt/homebrew/bin/yabai -m window --space 8
+cmd + ctrl - 9 : /opt/homebrew/bin/yabai -m window --space 9
 
-alt - x : yabai -m space --mirror x-axis
-alt - y : yabai -m space --mirror y-axis
-alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+alt - x : /opt/homebrew/bin/yabai -m space --mirror x-axis
+alt - y : /opt/homebrew/bin/yabai -m space --mirror y-axis
+alt - t : /opt/homebrew/bin/yabai -m window --toggle float --grid 4:4:1:1:2:2
 
-cmd + ctrl - r : yabai --stop-service; yabai --start-service
+cmd + ctrl - r : /opt/homebrew/bin/yabai --stop-service; /opt/homebrew/bin/yabai --start-service
