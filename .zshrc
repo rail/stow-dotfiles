@@ -1,7 +1,6 @@
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000000
 SAVEHIST=10000000
-HISTORY_IGNORE="(ls|pwd|exit|cd)*"
 
 setopt EXTENDED_HISTORY      # Write the history file in the ':start:elapsed;command' format.
 setopt INC_APPEND_HISTORY    # Write to the history file immediately, not when the shell exits.

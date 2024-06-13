@@ -23,5 +23,5 @@ return {
   },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  { import = "astrocommunity.workflow.hardtime-nvim" },
+  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
