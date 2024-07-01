@@ -7,7 +7,6 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.terraform" },
@@ -23,5 +22,4 @@ return {
   },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
-  -- { import = "astrocommunity.workflow.hardtime-nvim" },
 }
