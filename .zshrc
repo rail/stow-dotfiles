@@ -27,11 +27,11 @@ source $ZSH/oh-my-zsh.sh
 alias vi=nvim
 alias vim=nvim
 alias eza='eza --icons --git'
-alias la='eza -a'
-alias ll='eza -l'
-alias lla='eza -la'
-alias ls='eza'
-alias tree='eza --tree'
+alias la='eza -a --icons --git'
+alias ll='eza -l --icons --git'
+alias lla='eza -la --icons --git'
+alias ls='eza --icons --git'
+alias tree='eza --tree --icons --git'
 
 if [[ $OS == "Darwin" ]]; then
   BREW_PREFIX=$(brew --prefix)
