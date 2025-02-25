@@ -5,6 +5,7 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.go" },

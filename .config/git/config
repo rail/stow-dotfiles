@@ -28,10 +28,10 @@
 	sshCommand = "/usr/bin/ssh"
 
 [credential "https://gist.github.com"]
-	helper = "gh auth git-credential"
+	helper = !/opt/homebrew/bin/gh auth git-credential
 
 [credential "https://github.com"]
-	helper = "gh auth git-credential"
+	helper = !/opt/homebrew/bin/gh auth git-credential
 
 [delta]
 	features = "decorations"
@@ -69,3 +69,6 @@
 	email = "rail@iqchoice.com"
 	name = "Rail Aliiev"
 	signingKey = "F5382AFF7359EA23096B8397FA2FD0E389893249"
+
+[merge]
+	tool = "nvimdiff"

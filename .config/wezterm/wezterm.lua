@@ -7,8 +7,11 @@ config.font_size = 15
 config.inactive_pane_hsb = { saturation = 0.8, brightness = 0.8 }
 config.scrollback_lines = 10000
 config.use_dead_keys = false
-config.use_fancy_tab_bar = false
+-- config.use_fancy_tab_bar = false
 config.window_decorations = "INTEGRATED_BUTTONS | RESIZE"
 config.window_padding = { left = 5, right = 5, top = 5, bottom = 0.5 }
+config.window_frame = {
+	font_size = 14,
+}
 
 return config

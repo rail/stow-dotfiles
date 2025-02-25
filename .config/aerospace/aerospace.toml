@@ -45,6 +45,8 @@ key-mapping.preset = 'qwerty'
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = ['move-mouse window-lazy-center'] # Mouse lazily follows any focus (window or workspace)
 
+exec-on-workspace-change = ['/Users/rail/.config/aerospace/float.sh']
+
 # Gaps between windows (inner-*) and between monitor edges (outer-*).
 # Possible values:
 # - Constant:     gaps.outer.top = 8
@@ -123,6 +125,8 @@ alt-8 = 'workspace 8'
 alt-9 = 'workspace 9'
 alt-0 = 'workspace 0'
 alt-t = 'workspace T'
+alt-c = 'workspace C'
+alt-n = 'workspace N'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -136,6 +140,8 @@ alt-shift-8 = 'move-node-to-workspace 8'
 alt-shift-9 = 'move-node-to-workspace 9'
 alt-shift-0 = 'move-node-to-workspace 0'
 alt-shift-t = 'move-node-to-workspace T'
+alt-shift-c = 'move-node-to-workspace C'
+alt-shift-n = 'move-node-to-workspace N'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
@@ -178,3 +184,4 @@ alt-shift-l = ['join-with right', 'mode main']
 if.app-id = 'org.mozilla.firefox'
 if.window-title-regex-substring = 'Picture-in-Picture'
 run = 'layout floating'
+
