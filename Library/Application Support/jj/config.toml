@@ -1,0 +1,27 @@
+[user]
+name = "Rail Aliiev"
+email = "rail@iqchoice.com"
+
+[ui]
+diff.tool = "delta"
+diff.format = "git"
+pager = "delta"
+default-command = ["log", "-r", "trunk() | @ | bookmarks()"]
+# conflict-marker-style = "git"
+
+[merge-tools.delta]
+diff-expected-exit-codes = [0, 1]
+
+[git]
+push-bookmark-prefix = "rail/pr-"
+# relies on the fact that the original repo is named "upstream" and the fork is named "origin"
+# see https://jj-vcs.github.io/jj/latest/github/#using-several-remotes
+fetch = "upstream"
+push = "origin"
+
+[aliases]
+rebase-all = ["rebase", "-s", "all:roots(trunk()..@)", "-d", "trunk()"]
+fetch = ["git", "fetch"]
+heads = ["log", "-r", "visible_heads() | @"]
+ls-releases = ["log", "-r", "remote_bookmarks(regex:'release-2[3-9]', upstream) ~ remote_bookmarks('blathers/backport-')"]
+
