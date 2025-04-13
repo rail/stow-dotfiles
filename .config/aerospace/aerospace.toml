@@ -57,10 +57,10 @@ exec-on-workspace-change = ['/Users/rail/.config/aerospace/float.sh']
 [gaps]
 inner.horizontal = 6
 inner.vertical =   6
-outer.left =       6
-outer.bottom =     6
-outer.top =        6
-outer.right =      6
+outer.left =       2
+outer.bottom =     2
+outer.top =        2
+outer.right =      2
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -184,4 +184,3 @@ alt-shift-l = ['join-with right', 'mode main']
 if.app-id = 'org.mozilla.firefox'
 if.window-title-regex-substring = 'Picture-in-Picture'
 run = 'layout floating'
-

@@ -6,7 +6,7 @@ email = "rail@iqchoice.com"
 diff.tool = "delta"
 diff.format = "git"
 pager = "delta"
-default-command = ["log", "-r", "trunk() | @ | bookmarks()"]
+default-command = "log"
 # conflict-marker-style = "git"
 
 [merge-tools.delta]
@@ -24,4 +24,4 @@ rebase-all = ["rebase", "-s", "all:roots(trunk()..@)", "-d", "trunk()"]
 fetch = ["git", "fetch"]
 heads = ["log", "-r", "visible_heads() | @"]
 ls-releases = ["log", "-r", "remote_bookmarks(regex:'release-2[3-9]', upstream) ~ remote_bookmarks('blathers/backport-')"]
-
+fo = ["git", "fetch", "--remote", "origin"]

@@ -14,5 +14,6 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     then
       vim.cmd 'normal! g`"'
     end
+    vim.lsp.set_log_level "ERROR"
   end,
 })
