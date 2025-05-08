@@ -9,6 +9,7 @@ return {
   { import = "astrocommunity.file-explorer.oil-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.jj" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.utility.noice-nvim" },
