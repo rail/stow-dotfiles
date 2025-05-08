@@ -25,3 +25,27 @@ fetch = ["git", "fetch"]
 heads = ["log", "-r", "visible_heads() | @"]
 ls-releases = ["log", "-r", "remote_bookmarks(regex:'release-2[3-9]', upstream) ~ remote_bookmarks('blathers/backport-')"]
 fo = ["git", "fetch", "--remote", "origin"]
+
+[templates]
+draft_commit_description = '''
+concat(
+  coalesce(description, default_commit_description, "\n"),
+  surround(
+    "\nJJ: This commit contains the following changes:\n", "",
+    indent("JJ:     ", diff.stat(72)),
+  ),
+  "\nJJ: ignore-rest\n",
+  diff.git(),
+)
+'''
+
+[[--scope]]
+--when.repositories = ["~/git/cockroach"]
+[template-aliases]
+default_commit_description = '''
+"
+
+Release note: none
+Epic: none
+"
+'''
