@@ -3,8 +3,7 @@ name = "Rail Aliiev"
 email = "rail@iqchoice.com"
 
 [ui]
-diff.tool = "delta"
-diff.format = "git"
+diff-formatter = "delta"
 pager = "delta"
 default-command = "log"
 # conflict-marker-style = "git"
@@ -41,7 +40,7 @@ concat(
 
 [[--scope]]
 --when.repositories = ["~/git/cockroach"]
-[template-aliases]
+[--scope.template-aliases]
 default_commit_description = '''
 "
 

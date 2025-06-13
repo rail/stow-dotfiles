@@ -27,12 +27,6 @@
 	safecrlf = true
 	sshCommand = "/usr/bin/ssh"
 
-[credential "https://gist.github.com"]
-	helper = !/opt/homebrew/bin/gh auth git-credential
-
-[credential "https://github.com"]
-	helper = !/opt/homebrew/bin/gh auth git-credential
-
 [delta]
 	features = "decorations"
 
@@ -62,13 +56,17 @@
 [tag]
 	gpgSign = false
 
-[url "git@github.com:cockroachlabs"]
-	insteadOf = "https://github.com/cockroachlabs"
-
+; [url "git@github.com:cockroachlabs"]
+; 	insteadOf = "https://github.com/cockroachlabs"
+;
 [user]
 	email = "rail@iqchoice.com"
 	name = "Rail Aliiev"
 	signingKey = "F5382AFF7359EA23096B8397FA2FD0E389893249"
 
-[merge]
-	tool = "nvimdiff"
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
