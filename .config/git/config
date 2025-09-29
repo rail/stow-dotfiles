@@ -56,9 +56,6 @@
 [tag]
 	gpgSign = false
 
-; [url "git@github.com:cockroachlabs"]
-; 	insteadOf = "https://github.com/cockroachlabs"
-;
 [user]
 	email = "rail@iqchoice.com"
 	name = "Rail Aliiev"

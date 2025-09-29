@@ -14,6 +14,8 @@ setopt APPEND_HISTORY        # append to history file (Default)
 setopt HIST_NO_STORE         # Don't store history commands
 setopt HIST_REDUCE_BLANKS    # Remove superfluous blanks from each command line being added to the history.
 
+DISABLE_MAGIC_FUNCTIONS=true
+ZSH_DISABLE_COMPFIX=true
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(zoxide gh terraform starship fzf)
 
@@ -76,3 +78,8 @@ function ci() {
 function br_cleanup(){
   git branch --list  | cut -c 3- | gum choose --no-limit | xargs git branch -D
 }
+
+export CLAUDE_CODE_USE_VERTEX=1
+export CLOUD_ML_REGION=us-east5
+export ANTHROPIC_VERTEX_PROJECT_ID=vertex-model-runners
+export PATH="$HOME/.local/bin:$PATH"

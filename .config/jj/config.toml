@@ -12,20 +12,23 @@ default-command = "log"
 diff-expected-exit-codes = [0, 1]
 
 [git]
-push-bookmark-prefix = "rail/pr-"
 # relies on the fact that the original repo is named "upstream" and the fork is named "origin"
 # see https://jj-vcs.github.io/jj/latest/github/#using-several-remotes
 fetch = "upstream"
 push = "origin"
 
 [aliases]
-rebase-all = ["rebase", "-s", "all:roots(trunk()..@)", "-d", "trunk()"]
+fetch-crdb = ["git", "fetch", "--branch", "master", "--branch", "glob:release-*", "--branch", "glob:staging-*"]
+# rebase-all = ["rebase", "-s", "all:roots(trunk()..@)", "-d", "trunk()"]
 fetch = ["git", "fetch"]
 heads = ["log", "-r", "visible_heads() | @"]
 ls-releases = ["log", "-r", "remote_bookmarks(regex:'release-2[3-9]', upstream) ~ remote_bookmarks('blathers/backport-')"]
 fo = ["git", "fetch", "--remote", "origin"]
+fa = ["git", "fetch", "--all-remotes"]
+n = ["new", "trunk()"]
 
 [templates]
+git_push_bookmark = '"rail/pr-" ++ change_id.short()'
 draft_commit_description = '''
 concat(
   coalesce(description, default_commit_description, "\n"),
@@ -44,7 +47,7 @@ concat(
 default_commit_description = '''
 "
 
-Release note: none
 Epic: none
+Release note: none
 "
 '''

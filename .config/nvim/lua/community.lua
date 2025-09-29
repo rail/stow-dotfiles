@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.utility.noice-nvim" },
   {
     "noice.nvim",
